@@ -21,8 +21,8 @@ def gcdt(ts, dp=False):
         dp = np.max(numdp)
         print("The max number of dp found was ", dp)
     
+    # This is the multiplier:
     multiplier = float(10 ** dp)
-    #print(ts)
     new_list = [int(val * multiplier) for val in ts]
     #print(new_list)
     count = 0
